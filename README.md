@@ -7,7 +7,7 @@ Backend API for the Task Manager application, handling authentication, task mana
 
 ---
 
-## 🔗 Live API
+## 🔗 Backend API
 
 ⚙️ https://auth-backend-3kx0.onrender.com
 
