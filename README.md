@@ -1,6 +1,9 @@
-# 🔧 Task Manager Backend
+# 🔧 Task Manager Backend (Node.js + Express)
 
-Backend API for a full-stack task management application with authentication, password reset via email, and task operations.
+Backend API for the Task Manager application, handling authentication, task management, and email-based password reset.
+
+🔗 **Frontend:** https://task-manager-frontend-lemon-ten.vercel.app  
+🔗 **Frontend Repo:** https://github.com/Varsha-devhub/TaskManager-frontend  
 
 ---
 
@@ -12,27 +15,31 @@ Backend API for a full-stack task management application with authentication, pa
 
 ## ✨ Features
 
-* 🔐 User Authentication (JWT)
-* 🔑 Password Reset via Email
-* 📋 Task CRUD Operations
-* 🔒 Protected Routes (Auth Middleware)
-* 📧 Email Integration (Mailtrap)
+- 🔐 JWT Authentication & Authorization
+- 🔑 Secure Login & Registration
+- 📧 Password Reset via Email (Token-based)
+- ✅ Task CRUD APIs
+- 🔒 Protected Routes
+- 🔒 Password hashing using bcrypt
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Node.js
-* Express.js
-* MongoDB (Mongoose)
-* Nodemailer
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcrypt
+- Nodemailer
+- Mailtrap
 
 ---
 
 ## ⚙️ Environment Variables
 
 Create a `.env` file:
-
 
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret
@@ -44,17 +51,16 @@ EMAIL_PASS=your_mailtrap_user
 
 FRONTEND_URL=https://task-manager-frontend-lemon-ten.vercel.app
 
-
+---
 
 ## 📦 Installation
-
 
 git clone https://github.com/Varsha_devhub/TaskManagerBackend.git
 cd TaskManagerBackend
 npm install
 npm start
 
-
+---
 
 ## 📡 API Endpoints
 
@@ -73,6 +79,15 @@ npm start
 * POST /api/tasks
 * PUT /api/tasks
 * DELETE /api/tasks/:id
+
+---
+
+## 🧠 Highlights
+
+- Implemented secure token-based authentication
+- Designed RESTful APIs with protected routes
+- Handled real-world deployment and environment configuration
+- Integrated email service for password reset
 
 ---
 
